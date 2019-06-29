@@ -6,10 +6,20 @@ services:
     build: .
     ports:
       - "80:80"
+      - "443:443"
+    volumes:
+      - .:/app
     links:
       - mongo
   mongo:
     container_name: mongo
     image: mongo
+#    environment:
+#      - MONGO_INITDB_ROOT_USERNAME=admin
+#      - MONGO_INITDB_ROOT_PASSWORD=admin
     ports:
-      - "7017:7017"
+      - "27017:27017"
+  mongo_seed:
+    build: ./db
+    links:
+      - mongo

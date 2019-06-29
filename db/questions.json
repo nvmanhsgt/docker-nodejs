@@ -1,0 +1,17 @@
+[
+  {
+    "category": "ALL",
+    "content" : "Are you ready",
+    "anwser": {
+      "A" : "Yes",
+      "B" : "No",
+      "C" : "Ready",
+      "D" : "Not sure"
+    },
+    "answered": {
+      "A":"Yes"
+    },
+    "note": "Chung ta cung bat dau"
+  }
+]
+
